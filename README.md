@@ -26,8 +26,10 @@ This project was conducted through a review of the triage systems used in emerge
 There are divergent triage systems in the world, but there is no general and universal agreement on how patients and injured people should be triaged. Accordingly, these systems may be designed based on such criteria as vital signs, patient’s major symptoms, or the resources and facilities needed to respond to patients’ needs. The system will find the triage purely based on what groupd have made in an application.
 
 
-#### PICTURE REFERENCES
- 
+#### REFERENCES
+
+https://user-images.githubusercontent.com/97583085/179388019-d2bcba26-2da1-403c-91f2-44dec1400424.mp4
+
 ![alt text](https://github.com/saurabhrc15/UHI_Innovation_Challenge_4_Plus91_Final_Submission/blob/main/img/Clinical-Support-System-Image-1.png?raw=true)
 ![alt text](https://github.com/saurabhrc15/UHI_Innovation_Challenge_4_Plus91_Final_Submission/blob/main/img/Clinical-Support-System-Image-2.png?raw=true)
 ![alt text](https://github.com/saurabhrc15/UHI_Innovation_Challenge_4_Plus91_Final_Submission/blob/main/img/Clinical-Support-System-Image-3.png?raw=true)

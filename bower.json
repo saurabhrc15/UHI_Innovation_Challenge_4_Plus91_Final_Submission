@@ -1,0 +1,32 @@
+{
+  "name": "triage-system",
+  "authors": [
+    "Saurabh Chinchamalatpure <saurabh.chinchamalatpure@plus91.in>"
+  ],
+  "description": "Triaging and Clinical Support Systems",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.5.1",
+    "font-awesome": "fontawesome#~4.5.0",
+    "animate.css": "animate-css#~3.5.1",
+    "select2": "~4.0.2",
+    "moment": "~2.13.0",
+    "fullcalendar": "~2.7.1",
+    "jquery-ui": "^1.11.4",
+    "typeahead.js": "~0.11.1",
+    "pnotify": "~3.0.0",
+    "gasparesganga-jquery-loading-overlay": "^2.0.1"
+  },
+  "resolutions": { 
+    "jquery": "2.2.4" 
+  }
+}

@@ -1,0 +1,69 @@
+.classMedicalManagementDashboardButton {
+    font-size: 20px;
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 0px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.classButtonContainer{
+    margin-bottom: 25px;
+}
+
+.classIconContainer{
+    margin: 26px 0px 0px 25px;
+}
+
+.classAddNewTriagingStatus{
+    margin-top: -5px;
+    margin-right: -5px;
+}
+
+.classAddNewAgeGroupStatus{
+    margin-top: -5px;
+    margin-right: -5px;
+}
+
+.classManageAgeRuleGroups{
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+.classModalTriagingContainer .row{
+    margin-bottom: 10px;
+}
+
+.classModalMedicalManagementAgeGroupsContainer .row{
+    margin-bottom: 10px;
+}
+
+#idTriagingContainer .row{
+    margin-bottom: 10px;
+}
+.classRemoveTriagingRule{
+    margin-top: 0px;
+}
+.classTriagingRulesContainer{
+    margin-left: 2px;
+}
+.classTriagingRulesForGroup{
+    margin-left: 16px;
+}
+.classGroupHorizontalHr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+.classGroupRemoveTriagingRule{
+    margin-top: 0px;
+}
+.classVitalFieldCompiler{
+    margin-left: 0px;
+}
+
+.ui-datepicker-calendar {
+   display: none;
+}

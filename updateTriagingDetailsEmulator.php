@@ -7,7 +7,7 @@ $sTriagingName = Input::post('idTriagingName',['addslashes' => true]) !== null ?
 $iTriagingColorID = Input::post('idTriagingColor',['addslashes' => true]) !== null ? Input::post('idTriagingColor',['addslashes' => true]) : "";
 $sTriagingDescription = Input::post('idTriagingDescription',['addslashes' => true]) !== null ? Input::post('idTriagingDescription',['addslashes' => true]) : "";
 $aNoOfGroups = Input::post('idTrigingGroupIndex',['addslashes' => true]);
-$sTriageGroupID = Input::post('idTriagingGroupID') ? implode(", ", Input::post('idTriagingGroupID')) : [];
+$sTriageGroupID = Input::post('idTriagingGroupID') ? implode(", ", Input::post('idTriagingGroupID')) : "0";
 
 if($iTriageID > 0){
 	//! invalidate previous details for triaging..

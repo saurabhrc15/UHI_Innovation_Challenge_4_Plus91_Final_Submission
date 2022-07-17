@@ -553,7 +553,7 @@ function invalidateTriagePreviousGroupMaster($iTriageID, $sGroupID = ""){
     $sQuery = "UPDATE `{$sTable}` SET `deleted` = 1 where `triage_id`= '{$iTriageID}' AND `deleted` = 0";
 
     if ($sGroupID) {
-        $sQuery .=" AND `triage_group_id` = ({$sGroupID})";
+        $sQuery .=" AND `triage_group_id` IN ({$sGroupID})";
     }
 
     $rResult = $conn->query($sQuery);
@@ -574,7 +574,7 @@ function invalidateTriagePreviousRuleMaster($iTriageID, $sGroupID = ""){
     $sQuery = "UPDATE `{$sTable}` SET `deleted` = 1 where `triage_id`= '{$iTriageID}' AND `deleted` = 0";
 
     if ($sGroupID) {
-        $sQuery .=" AND `triage_group_id` = ({$sGroupID})";
+        $sQuery .=" AND `triage_group_id` IN ({$sGroupID})";
     }
 
     $rResult = $conn->query($sQuery);
@@ -595,7 +595,7 @@ function invalidateTriagePreviousRuleDetails($iTriageID, $sGroupID = ""){
     $sQuery = "UPDATE `{$sTable}` SET `deleted` = 1 where `triage_id`= '{$iTriageID}' AND `deleted` = 0";
 
     if ($sGroupID) {
-        $sQuery .=" AND `triage_group_id` = ({$sGroupID})";
+        $sQuery .=" AND `triage_group_id` IN ({$sGroupID})";
     }
 
     $rResult = $conn->query($sQuery);
@@ -617,7 +617,7 @@ function fAddTriageGroupMaster($iTriageID,$iAgeGroupID,$iAddedBy=0){
 
     $sIQuery = "INSERT INTO `{$sTable}` (`triage_group_id`, `triage_id`, `age_group_id`, `added_by`, `added_on`, `deleted`)
             VALUES (NULL,'{$iTriageID}','{$iAgeGroupID}','{$iAddedBy}','{$dAddedOn}',0)";
-    
+    // var_dump($sIQuery);
     if($conn != false){
         $sIQueryR = $conn->query($sIQuery);
         if($sIQueryR > 0){

@@ -410,3 +410,16 @@ if ($sFlag == "generateTriage") {
 
 	echo( json_encode($aResponse) );
 }
+
+if ($sFlag == "deleteTriageGroupDetails") {
+	$iTriageID = Input::request('iTriageID') ? Input::request('iTriageID') : 0;
+	$iTriageGroupID = Input::request('iTriageGroupID') ? Input::request('iTriageGroupID') : 0;
+	$bResult = false;
+
+	if ($iTriageID > 0 && $iTriageGroupID > 0) {
+		$bResult = invalidateTriagePreviousGroupMaster($iTriageID, $iTriageGroupID);
+	}
+
+	header("Content-Type: application/json");
+	echo(json_encode(['result' => $bResult]));
+}

@@ -945,14 +945,14 @@ $iTriageID = Input::request('iTriageID') ? Input::request('iTriageID') : 0;
             //! Function for deleting triage group..
             function deleteTriageGroupDetails(iTriageGroupID) {
                 $.ajax({
-                    url: "ajaxEhr.php?sFlag=deleteTriageGroupDetails",
+                    url: "ajaxTriage.php?sFlag=deleteTriageGroupDetails",
                     type:"POST",
                     data:{iTriageID:iTriageID,iTriageGroupID:iTriageGroupID},
                     success: function (data){
                         if (data.result) {
-                            console.log('Group deleted successfully');
+                            pNotifyAlert('Group deleted successfully', 'success');
                         } else {
-                            console.log('Error while deleting group');
+                            pNotifyAlert('Error while deleting triaging group', 'error');
                         }
                     }
                 });
